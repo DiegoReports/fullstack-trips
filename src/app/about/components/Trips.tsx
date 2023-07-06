@@ -8,21 +8,21 @@ const getTrips = async () => {
 }
 
 const Trips = async () => {
-  //const data = await getTrips()
-  const data = await fetch('http://jsonplaceholder.typicode.com/posts').then(
+  const data = await getTrips()
+  /* const data = await fetch('http://jsonplaceholder.typicode.com/posts').then(
     res => res.json()
-  )
+  ) */
 
   console.log({ data })
 
-  //return <div>Trips</div>
-  return (
+  return <div>Trips</div>
+  /* return (
     <div>
-      {data.map(i => (
+      {data.map((i: any) => (
         <p key={i.id}>{i.title}</p>
       ))}
     </div>
-  )
+  ) */
 }
 
 export default Trips
